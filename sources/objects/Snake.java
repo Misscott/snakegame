@@ -35,7 +35,8 @@ public class Snake {
         //collision loop
         for (int d = length - 1; d > 0; d--) {
             if ((snakeX[0] == snakeX[d]) && (snakeY[0] == snakeY[d])) { //la condicion ahora solo se cumple cuando se produce una colision
-                length = - 2;
+                length = -2;
+                break;
             }
         }
 
